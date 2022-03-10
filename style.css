@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.field-box {
+  background: rgb(3, 177, 90);
+  border-radius: 5px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.small-box {
+  background: rgb(231, 231, 3);
+  border-radius: 5px;
+  position: absolute;
+}
+
+.container {
+  background: rgb(231, 229, 229);
+  padding: 20px;
+  display: flex;
+}
+
+.box-size-form {
+  margin: 20px auto;
+  display: flex;
+}
+.box-size-form > input {
+  margin-left: 10px;
+}
+
+.submit-button {
+  height: 100%;
+  padding: 8px;
+  align-items: center;
+  color: #fff;
+  font-size: medium;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(77, 74, 74);
+}
+
+.submit-button:hover {
+  background-color: rgb(138, 133, 133);
+}
+
+.box-size-input {
+  padding: 10px;
+  font-size: small;
+  border-radius: 5px;
+  border: 1px solid rgb(199, 195, 195);
+}
+
+.axis-button {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: large;
+  border: none;
+  background: rgb(0, 183, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-box {
+  height: 50px;
+  width: 100px;
+}
+
+.axis-button-box {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.box-container {
+  height: 100vh;
+  background: rgb(192, 247, 219);
+  padding: 20px;
+}
+
+.form-button-box {
+  margin-left: 10px;
+}
+
+.reset-button {
+  height: 100%;
+  padding: 8px;
+  align-items: center;
+  color: #fff;
+  font-size: medium;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(255, 90, 90);
+}
+
+.up-button {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.down-button {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.left-button {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.right-button {
+  grid-area: 2 / 4 / 3 / 5;
+}
