@@ -37,3 +37,39 @@ const fieldBox = () => {
 };
 
 fieldBox();
+
+buttonAxisRight.addEventListener('click', (e) => {
+  e.preventDefault();
+  let dydis = state.boxMoveAxisHorizontal + state.boxSize < state.fieldSize;
+  if (dydis) {
+    state.boxMoveAxisHorizontal += state.boxSize;
+    movingBox.style.marginLeft = `${state.boxMoveAxisHorizontal}px`;
+  }
+});
+
+buttonAxisLeft.addEventListener('click', (e) => {
+  e.preventDefault;
+  let dydis = state.boxMoveAxisHorizontal > 0;
+  if (dydis) {
+    state.boxMoveAxisHorizontal = state.boxMoveAxisHorizontal - state.boxSize;
+    movingBox.style.marginLeft = `${state.boxMoveAxisHorizontal}px`;
+  }
+});
+
+buttonAxisDown.addEventListener('click', (e) => {
+  e.preventDefault;
+  let dydis = state.boxMoveAxisVertical + state.boxSize < state.fieldSize;
+  if (dydis) {
+    state.boxMoveAxisVertical += state.boxSize;
+    movingBox.style.marginTop = `${state.boxMoveAxisVertical}px`;
+  }
+});
+
+buttonAxisUp.addEventListener('click', (e) => {
+  e.preventDefault();
+  let dydis = state.boxMoveAxisVertical > 0;
+  if (dydis) {
+    state.boxMoveAxisVertical = state.boxMoveAxisVertical - state.boxSize;
+    movingBox.style.marginTop = `${state.boxMoveAxisVertical}px`;
+  }
+});
