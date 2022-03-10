@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>test</h1>
+      <div class="axis-button-box">
+        <div class="right-button button-box">
+          <button class="axis-button" id="axis-right-button">Right</button>
+        </div>
+
+        <div class="left-button button-box">
+          <button class="axis-button" id="axis-left-button">Left</button>
+        </div>
+
+        <div class="up-button button-box">
+          <button class="axis-button" id="axis-up-button">Up</button>
+        </div>
+
+        <div class="down-button button-box">
+          <button class="axis-button" id="axis-down-button">Down</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form class="box-size-form" id="field-box-form">
+          <input
+            type="number"
+            name="boxFieldWidth"
+            id="box-field-width"
+            class="box-size-input"
+            placeholder="Iveskite lauko dydi"
+            required
+            value=""
+          />
+          <input
+            type="number"
+            name="smallBoxWidth"
+            id="mving-box-width"
+            class="box-size-input"
+            placeholder="Iveskite judancio objekto dydi"
+            required
+            value=""
+          />
+          <div class="form-button-box">
+            <button class="submit-button">Add params</button>
+            <button id="reset-input" class="reset-button">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="box-container">
+        <div class="field-box" id="field-box">
+          <div class="small-box" id="small-box"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
