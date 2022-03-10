@@ -10,6 +10,10 @@ const resetInput = document.getElementById('reset-input');
 const movingBoxInput = document.getElementById('mving-box-width');
 const fieldBoxInput = document.getElementById('box-field-width');
 
+resetInput.addEventListener('click', () => {
+  location.reload();
+});
+
 let state = {
   boxSize: 0,
   boxMoveAxisHorizontal: 0,
