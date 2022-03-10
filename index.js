@@ -34,7 +34,6 @@ const fieldBox = () => {
     } else {
       alert('Judantis kvadratelis yra per didelis');
     }
-
     fieldBoxInput.value = '';
     movingBoxInput.value = '';
   });
